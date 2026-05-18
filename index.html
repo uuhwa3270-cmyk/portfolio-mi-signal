@@ -98,7 +98,7 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
 <!-- Slide 0: Interactive Hero (from v2) -->
 <div class="slide active" data-slide="0">
   <div class="slide-inner" style="padding:0;overflow:hidden;border-radius:16px">
-    <iframe src="../hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
+    <iframe src="hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
   </div>
 </div>
 
@@ -137,7 +137,7 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
             </div>
             <!-- Video content -->
             <div style="border-radius:0 0 8px 8px;overflow:hidden;background:#fff">
-              <video src="video-hero.mp4" autoplay muted loop playsinline style="width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover"></video>
+              <video src="video-hero.mov" autoplay muted loop playsinline style="width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover"></video>
             </div>
           </div>
         </div>
@@ -505,35 +505,82 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
   </div>
 </div>
 
-<!-- Slide 8: Key Decisions -->
+<!-- Slide 8: Key Decisions (심화) -->
 <div class="slide" data-slide="8">
-  <div class="slide-inner">
+  <div class="slide-inner" style="padding:44px 52px">
     <span class="slide-badge">DECISION MAKING</span>
-    <div class="flex flex-col gap-24">
-      <div class="flex flex-col gap-12">
+    <div class="flex flex-col gap-16" style="height:100%">
+      <div class="flex flex-col gap-8">
         <div class="accent-line"></div>
-        <h2>핵심 의사결정 — 기획자로서 내린 판단</h2>
+        <h2 style="font-size:24px">핵심 의사결정 — UX 기획자로서 내린 6가지 판단</h2>
+        <p style="font-size:13px;color:var(--gray-400)">12일간 25편의 리서치 문서를 기반으로, 각 판단에 명확한 근거를 두고 설계</p>
       </div>
-      <div class="grid-2" style="gap:16px">
-        <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><h3 style="font-size:14px">포지셔닝 전환</h3></div>
-          <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">Before:</strong> 광고 실행 효율화 (편의성 도구)<br><strong style="color:var(--primary)">After:</strong> 광고를 하고 싶게 만드는 수요 창출 플랫폼</p>
-          <p style="font-size:11px;color:var(--gray-400)">근거: 경영진 워크숍 "편의성은 기본값이지 셀링 포인트가 아니다"</p>
+
+      <!-- 6 decisions in 3x2 grid -->
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;flex:1">
+        <!-- 1. 포지셔닝 전환 -->
+        <div class="card flex flex-col gap-8" style="padding:14px">
+          <div class="flex items-center gap-6">
+            <div style="width:22px;height:22px;background:var(--primary-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">1</div>
+            <h3 style="font-size:13px">포지셔닝 전환</h3>
+          </div>
+          <p style="font-size:11px;color:var(--gray-500);line-height:1.6"><strong style="color:var(--gray-700)">Before:</strong> 광고 실행 효율화 도구<br><strong style="color:var(--primary)">After:</strong> "광고를 하고 싶게 만드는" 수요 창출 플랫폼</p>
+          <p style="font-size:10px;color:var(--gray-400);line-height:1.5;margin-top:auto;padding-top:6px;border-top:1px solid var(--gray-100)"><strong>판단 근거:</strong> 시장에서 편의성은 기본값이지 차별화 포인트가 아님. "비용 절감"이 아닌 "매출 기회 발견"으로 가치 제안을 전환해야 광고주가 움직임</p>
         </div>
-        <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><h3 style="font-size:14px">페이지 구조 변경</h3></div>
-          <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">Before:</strong> 4페이지 분리 구조<br><strong style="color:var(--primary)">After:</strong> 3탭 단일 페이지 (서비스·브리핑·분석)</p>
-          <p style="font-size:11px;color:var(--gray-400)">근거: 데모 시연 시 페이지 전환이 스토리텔링을 끊는 문제</p>
+
+        <!-- 2. 정보 구조 설계 -->
+        <div class="card flex flex-col gap-8" style="padding:14px">
+          <div class="flex items-center gap-6">
+            <div style="width:22px;height:22px;background:var(--primary-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">2</div>
+            <h3 style="font-size:13px">정보 구조 — 레퍼런스 매핑</h3>
+          </div>
+          <p style="font-size:11px;color:var(--gray-500);line-height:1.6"><strong style="color:var(--gray-700)">네이버 포털</strong> → 매일 열고 싶은 2단 카드 피드<br><strong style="color:var(--gray-700)">토스증권 종목 상세</strong> → 탭 기반 멀티패널 분석<br><strong style="color:var(--gray-700)">당근 동네 선택</strong> → 3단계 직관 오디언스 선택</p>
+          <p style="font-size:10px;color:var(--gray-400);line-height:1.5;margin-top:auto;padding-top:6px;border-top:1px solid var(--gray-100)"><strong>판단 근거:</strong> 마케터에게 익숙한 멘탈 모델을 차용해 학습 비용 제거. "내 앱 = 종목"으로 프레이밍하면 분석→집행 퍼널이 자연스러움</p>
         </div>
-        <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><h3 style="font-size:14px">데이터 전략</h3></div>
-          <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">문제:</strong> 구현 가능성 58%<br><strong style="color:var(--primary)">해결:</strong> 외부 API 5종 + UX 대응 설계 → 100%</p>
-          <p style="font-size:11px;color:var(--gray-400)">원칙: "목업으로 채우지 않고, 실데이터 기반으로 구현한다"</p>
+
+        <!-- 3. 페이지 구조 변경 -->
+        <div class="card flex flex-col gap-8" style="padding:14px">
+          <div class="flex items-center gap-6">
+            <div style="width:22px;height:22px;background:var(--primary-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">3</div>
+            <h3 style="font-size:13px">페이지 구조 전환</h3>
+          </div>
+          <p style="font-size:11px;color:var(--gray-500);line-height:1.6"><strong style="color:var(--gray-700)">Before:</strong> 4페이지 분리 (홈/경쟁사/내앱/캠페인)<br><strong style="color:var(--primary)">After:</strong> 3탭 단일 페이지 + 사이드 패널 + 모달</p>
+          <p style="font-size:10px;color:var(--gray-400);line-height:1.5;margin-top:auto;padding-top:6px;border-top:1px solid var(--gray-100)"><strong>판단 근거:</strong> 데모 시연 시 페이지 전환이 스토리텔링을 끊음. 경쟁 분석은 "내 앱" 맥락 안에서 더 자연스러움 → 서브탭으로 통합</p>
         </div>
-        <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><h3 style="font-size:14px">HTML→React 마이그레이션</h3></div>
-          <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">상황:</strong> 4,000줄 HTML → iframe 임베드<br><strong style="color:var(--primary)">결정:</strong> iframe 폐기 → Tailwind + React 완전 재구현</p>
-          <p style="font-size:11px;color:var(--gray-400)">사유: React 컨텍스트 단절, SEO 불가, 접근성 위반</p>
+
+        <!-- 4. 시그널 컬러 체계 -->
+        <div class="card flex flex-col gap-8" style="padding:14px">
+          <div class="flex items-center gap-6">
+            <div style="width:22px;height:22px;background:var(--primary-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">4</div>
+            <h3 style="font-size:13px">시그널 컬러 체계 설계</h3>
+          </div>
+          <div style="display:flex;gap:6px;margin:4px 0">
+            <span style="font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(239,68,68,.1);color:var(--red);font-weight:600">위협</span>
+            <span style="font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(249,115,22,.1);color:var(--orange);font-weight:600">주의</span>
+            <span style="font-size:10px;padding:2px 6px;border-radius:4px;background:var(--primary-light);color:var(--primary);font-weight:600">기회</span>
+            <span style="font-size:10px;padding:2px 6px;border-radius:4px;background:rgba(34,197,94,.1);color:var(--green);font-weight:600">안정</span>
+          </div>
+          <p style="font-size:10px;color:var(--gray-400);line-height:1.5;margin-top:auto;padding-top:6px;border-top:1px solid var(--gray-100)"><strong>판단 근거:</strong> CMO가 30초 안에 상황을 파악해야 함. 색상만으로 "지금 뭘 해야 하는지" 즉시 인지 가능한 4색 트래픽 라이트 시스템 설계</p>
+        </div>
+
+        <!-- 5. 전문가 브리핑 톤 -->
+        <div class="card flex flex-col gap-8" style="padding:14px">
+          <div class="flex items-center gap-6">
+            <div style="width:22px;height:22px;background:var(--primary-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">5</div>
+            <h3 style="font-size:13px">전문가 브리핑 톤 도입</h3>
+          </div>
+          <p style="font-size:11px;color:var(--gray-500);line-height:1.6"><strong style="color:var(--gray-700)">Before:</strong> "MAU 2,800,000 (+22.4%)"<br><strong style="color:var(--primary)">After:</strong> "마켓컬리 새벽배송 확대 이후 MAU 급등, 약 43만 이탈 추정"</p>
+          <p style="font-size:10px;color:var(--gray-400);line-height:1.5;margin-top:auto;padding-top:6px;border-top:1px solid var(--gray-100)"><strong>판단 근거:</strong> 수치 앞에 맥락을 먼저 제시 + 출처·기준일 명시 + 추정치 표기 = 전문가 신뢰. "그래서 뭘 해야 하는지" 액션까지 제안</p>
+        </div>
+
+        <!-- 6. 접근성 + 다크모드 전수 대응 -->
+        <div class="card flex flex-col gap-8" style="padding:14px">
+          <div class="flex items-center gap-6">
+            <div style="width:22px;height:22px;background:var(--primary-light);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--primary)">6</div>
+            <h3 style="font-size:13px">WCAG AA + 다크모드 전수 QA</h3>
+          </div>
+          <p style="font-size:11px;color:var(--gray-500);line-height:1.6">30건 QA 수행 — 라이트 15건 + 다크 14건 + 빌드 1건<br>시맨틱 토큰 기반 컬러 체계로 모드 자동 전환</p>
+          <p style="font-size:10px;color:var(--gray-400);line-height:1.5;margin-top:auto;padding-top:6px;border-top:1px solid var(--gray-100)"><strong>판단 근거:</strong> 하드코딩 hex → 토큰 전환으로 유지보수성 확보. inline style 제거 → Tailwind 클래스 기반으로 다크모드 자동 대응 구조 설계</p>
         </div>
       </div>
     </div>
