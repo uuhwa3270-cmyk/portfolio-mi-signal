@@ -91,68 +91,69 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
 <div class="progress" id="progress"></div>
 <div class="deck" id="deck">
 
-<!-- Slide 0: Hero (from v2) -->
+<!-- Slide 0: Interactive Hero (from v2) -->
 <div class="slide active" data-slide="0">
-  <div class="slide-inner hero-bg" style="padding:0;display:flex;flex-direction:row">
+  <div class="slide-inner" style="padding:0;overflow:hidden;border-radius:16px">
+    <iframe src="hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
+  </div>
+</div>
+
+<!-- Slide 1: Hero with Screenshot (Light) -->
+<div class="slide" data-slide="1">
+  <div class="slide-inner" style="padding:0;display:flex;flex-direction:row;background:#fafafa">
     <div style="flex:1;padding:56px 48px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
-      <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at 20% 50%,rgba(124,58,237,.08) 0%,transparent 60%);pointer-events:none"></div>
       <div class="flex flex-col gap-20" style="position:relative">
         <div class="flex items-center gap-8">
           <div style="width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite"></div>
           <span style="font-size:12px;color:var(--primary);font-weight:600;letter-spacing:1px">LIVE SERVICE</span>
         </div>
-        <h1 style="font-size:48px;color:#fff;line-height:1.2">MI Signal</h1>
-        <p style="font-size:18px;color:rgba(255,255,255,.7);line-height:1.6;max-width:420px">자사 앱 데이터 + 외부 시그널 5종을 결합해,<br>지금이 광고를 집행할 최적 타이밍인지<br>알려주는 인텔리전스 플랫폼</p>
+        <h1 style="font-size:44px;color:var(--gray-900);line-height:1.2">MI Signal</h1>
+        <p style="font-size:17px;color:var(--gray-500);line-height:1.6;max-width:420px">자사 앱 데이터 + 외부 시그널 5종을 결합해,<br>지금이 광고를 집행할 최적 타이밍인지<br>알려주는 인텔리전스 플랫폼</p>
         <div class="flex gap-12" style="margin-top:8px">
           <a href="https://feature-hazel.d2n8i0hp2faia9.amplifyapp.com/" target="_blank" class="link-btn">
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 1h6v6M13 1L6 8M5 3H2a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V9"/></svg>
             라이브 데모 보기
           </a>
-          <span style="font-size:12px;color:rgba(255,255,255,.4);display:flex;align-items:center">AWS Amplify 배포</span>
+          <span style="font-size:12px;color:var(--gray-400);display:flex;align-items:center">AWS Amplify 배포</span>
         </div>
       </div>
     </div>
-    <div style="flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center">
-      <div style="position:absolute;inset:0;background:linear-gradient(90deg,#0f0f1a 0%,transparent 20%);z-index:1"></div>
-      <img src="screenshot-briefing.png" alt="MI Signal 브리핑 화면" style="width:110%;height:100%;object-fit:cover;object-position:left center;opacity:.85">
+    <div style="flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--gray-100)">
+      <img src="screenshot-briefing.png" alt="MI Signal 브리핑 화면" style="width:105%;height:95%;object-fit:cover;object-position:left center;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.1)">
     </div>
   </div>
 </div>
 
-<!-- Slide 1: Cover -->
-<div class="slide" data-slide="1">
-  <div class="slide-inner cover-bg">
-    <div class="orbit-container">
-      <div class="orbit orbit-1"></div>
-      <div class="orbit orbit-2"></div>
-    </div>
-    <div class="flex flex-col gap-24" style="position:relative;z-index:1">
+<!-- Slide 2: Cover (Light) -->
+<div class="slide" data-slide="2">
+  <div class="slide-inner" style="background:#fff">
+    <div class="flex flex-col gap-24" style="position:relative;z-index:1;justify-content:center;height:100%">
       <div class="flex flex-col gap-12">
         <p class="label">AI Championship Season 1 · 17팀 중 3등 수상</p>
-        <h1 style="font-size:40px">MI Signal<br><span style="font-size:22px;font-weight:500;color:rgba(255,255,255,.6)">광고 집행 타이밍 인텔리전스 플랫폼</span></h1>
+        <h1 style="font-size:40px;color:var(--gray-900)">MI Signal<br><span style="font-size:22px;font-weight:500;color:var(--gray-400)">광고 집행 타이밍 인텔리전스 플랫폼</span></h1>
       </div>
       <div class="flex gap-24 items-center" style="margin-top:auto">
         <div class="flex flex-col gap-4">
-          <p style="font-size:13px;color:rgba(255,255,255,.4)">Role</p>
-          <p style="font-size:15px;font-weight:600">Product Designer · 기획~구현 전 과정</p>
+          <p style="font-size:13px;color:var(--gray-400)">Role</p>
+          <p style="font-size:15px;font-weight:600;color:var(--gray-800)">Product Designer · 기획~구현 전 과정</p>
         </div>
-        <div style="width:1px;height:32px;background:rgba(255,255,255,.2)"></div>
+        <div style="width:1px;height:32px;background:var(--gray-200)"></div>
         <div class="flex flex-col gap-4">
-          <p style="font-size:13px;color:rgba(255,255,255,.4)">Team</p>
-          <p style="font-size:15px;font-weight:600">2인 (PD + FE) · Kiro 풀타임 활용</p>
+          <p style="font-size:13px;color:var(--gray-400)">Team</p>
+          <p style="font-size:15px;font-weight:600;color:var(--gray-800)">2인 (PD + FE) · Kiro 풀타임 활용</p>
         </div>
-        <div style="width:1px;height:32px;background:rgba(255,255,255,.2)"></div>
+        <div style="width:1px;height:32px;background:var(--gray-200)"></div>
         <div class="flex flex-col gap-4">
-          <p style="font-size:13px;color:rgba(255,255,255,.4)">Duration</p>
-          <p style="font-size:15px;font-weight:600">12일 (2026.04)</p>
+          <p style="font-size:13px;color:var(--gray-400)">Duration</p>
+          <p style="font-size:15px;font-weight:600;color:var(--gray-800)">12일 (2026.04)</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Slide 2: Overview -->
-<div class="slide" data-slide="2">
+<!-- Slide 3: Overview -->
+<div class="slide" data-slide="3">
   <div class="slide-inner">
     <span class="slide-badge">OVERVIEW</span>
     <div class="flex flex-col gap-28">
@@ -197,8 +198,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 3: Problem -->
-<div class="slide" data-slide="3">
+<!-- Slide 4: Problem -->
+<div class="slide" data-slide="4">
   <div class="slide-inner">
     <span class="slide-badge">PROBLEM</span>
     <div class="flex flex-col gap-24">
@@ -234,8 +235,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 4: Solution + Screenshot -->
-<div class="slide" data-slide="4">
+<!-- Slide 5: Solution + Screenshot -->
+<div class="slide" data-slide="5">
   <div class="slide-inner">
     <span class="slide-badge">SOLUTION</span>
     <div class="flex flex-col gap-20">
@@ -285,8 +286,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 5: Solution Screenshot 2 -->
-<div class="slide" data-slide="5">
+<!-- Slide 6: Solution Screenshot 2 -->
+<div class="slide" data-slide="6">
   <div class="slide-inner" style="padding:40px 48px">
     <span class="slide-badge">SOLUTION — 내 앱 분석</span>
     <div class="flex flex-col gap-16">
@@ -307,8 +308,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 6: Differentiation + Business -->
-<div class="slide" data-slide="6">
+<!-- Slide 7: Differentiation + Business -->
+<div class="slide" data-slide="7">
   <div class="slide-inner">
     <span class="slide-badge">DIFFERENTIATION</span>
     <div class="flex flex-col gap-20">
@@ -354,8 +355,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 7: Key Decisions -->
-<div class="slide" data-slide="7">
+<!-- Slide 8: Key Decisions -->
+<div class="slide" data-slide="8">
   <div class="slide-inner">
     <span class="slide-badge">DECISION MAKING</span>
     <div class="flex flex-col gap-24">
@@ -389,8 +390,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 8: Process -->
-<div class="slide" data-slide="8">
+<!-- Slide 9: Process -->
+<div class="slide" data-slide="9">
   <div class="slide-inner">
     <span class="slide-badge">PROCESS</span>
     <div class="flex flex-col gap-20">
@@ -430,8 +431,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 9: AI Workflow -->
-<div class="slide" data-slide="9">
+<!-- Slide 10: AI Workflow -->
+<div class="slide" data-slide="10">
   <div class="slide-inner">
     <span class="slide-badge">AI WORKFLOW</span>
     <div class="flex flex-col gap-20">
@@ -479,8 +480,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 10: PD × AI Detail -->
-<div class="slide" data-slide="10">
+<!-- Slide 11: PD × AI Detail -->
+<div class="slide" data-slide="11">
   <div class="slide-inner">
     <span class="slide-badge">PD × AI</span>
     <div class="flex flex-col gap-16">
@@ -515,8 +516,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 11: Results -->
-<div class="slide" data-slide="11">
+<!-- Slide 12: Results -->
+<div class="slide" data-slide="12">
   <div class="slide-inner">
     <span class="slide-badge">RESULTS</span>
     <div class="flex flex-col gap-20">
@@ -568,8 +569,8 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 12: Takeaway -->
-<div class="slide" data-slide="12">
+<!-- Slide 13: Takeaway -->
+<div class="slide" data-slide="13">
   <div class="slide-inner cover-bg">
     <div class="orbit-container" style="opacity:.1">
       <div class="orbit orbit-1"></div>
@@ -605,7 +606,7 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
 
 <nav class="nav">
   <button id="prev" aria-label="Previous slide">←</button>
-  <span class="nav-counter" id="counter">1 / 13</span>
+  <span class="nav-counter" id="counter">1 / 14</span>
   <button id="next" aria-label="Next slide">→</button>
 </nav>
 
