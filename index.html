@@ -98,7 +98,7 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
 <!-- Slide 0: Interactive Hero (from v2) -->
 <div class="slide active" data-slide="0">
   <div class="slide-inner" style="padding:0;overflow:hidden;border-radius:16px">
-    <iframe src="hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
+    <iframe src="../hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
   </div>
 </div>
 
@@ -268,81 +268,78 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
   </div>
 </div>
 
-<!-- Slide 4: Problem -->
+<!-- Slide 4: Problem (Workflow Chart — 방향 A) -->
 <div class="slide" data-slide="4">
   <div class="slide-inner" style="background:#fff;padding:48px 56px">
     <span class="slide-badge">PROBLEM</span>
-    <div class="flex flex-col gap-24" style="height:100%">
+    <div class="flex flex-col gap-20" style="height:100%">
       <!-- Header -->
       <div class="flex flex-col gap-12">
         <div class="accent-line"></div>
         <h2 style="font-size:26px">마케터의 매일 아침 — 시그널은 흩어져 있다</h2>
+        <p style="font-size:14px;color:var(--gray-400)">"지금이 광고를 집행할 타이밍인가?" — 이 질문에 답하기까지의 워크플로우</p>
       </div>
 
-      <!-- Main content: 2 columns -->
-      <div class="flex gap-40" style="flex:1">
-        <!-- Left: Before (현재 상태) -->
-        <div class="flex-1 flex flex-col gap-16">
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:6px;height:6px;border-radius:50%;background:var(--red)"></div>
-            <p style="font-size:12px;font-weight:600;color:var(--red);text-transform:uppercase;letter-spacing:1px">현재 상태</p>
+      <!-- Workflow Chart -->
+      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0">
+        <!-- Step 1: 4개 시그널 소스 -->
+        <div style="display:flex;gap:16px;justify-content:center;width:100%">
+          <div style="flex:1;max-width:160px;padding:14px 12px;border-radius:10px;border:1px solid var(--gray-200);background:var(--gray-50);text-align:center">
+            <p style="font-size:18px;margin-bottom:4px">📊</p>
+            <p style="font-size:12px;font-weight:600;color:var(--gray-700)">자사 앱 성과</p>
+            <p style="font-size:10px;color:var(--gray-400);margin-top:2px">수치만 보이고 "왜"를 모름</p>
           </div>
-
-          <p style="font-size:24px;font-weight:700;color:var(--gray-900);line-height:1.4">"지금이 광고를 집행할<br>타이밍인가?"</p>
-          <p style="font-size:13px;color:var(--gray-400);line-height:1.7">이 질문에 답하려면 매일 아침<br>5개 도구를 각각 확인해야 합니다.</p>
-
-          <!-- Pain points -->
-          <div class="flex flex-col gap-6" style="margin-top:auto">
-            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:8px;border:1px solid var(--gray-100)">
-              <span style="font-size:13px;color:var(--gray-700)">자사 앱 성과</span>
-              <span style="font-size:11px;color:var(--gray-400)">수치만 보이고 "왜"를 모름</span>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:8px;border:1px solid var(--gray-100)">
-              <span style="font-size:13px;color:var(--gray-700)">경쟁사 동향</span>
-              <span style="font-size:11px;color:var(--gray-400)">자사 데이터와 연결 안 됨</span>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:8px;border:1px solid var(--gray-100)">
-              <span style="font-size:13px;color:var(--gray-700)">외부 환경 (날씨·연휴·검색)</span>
-              <span style="font-size:11px;color:var(--gray-400)">복합 해석 불가</span>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:8px;border:1px solid var(--gray-100)">
-              <span style="font-size:13px;color:var(--gray-700)">업계 뉴스</span>
-              <span style="font-size:11px;color:var(--gray-400)">집행과 연결 짓기 어려움</span>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-radius:8px;background:rgba(239,68,68,.04);border:1px solid rgba(239,68,68,.12)">
-              <span style="font-size:13px;font-weight:600;color:var(--red)">최종 판단</span>
-              <span style="font-size:11px;font-weight:500;color:var(--red)">마케터의 감과 경험에 의존</span>
-            </div>
+          <div style="flex:1;max-width:160px;padding:14px 12px;border-radius:10px;border:1px solid var(--gray-200);background:var(--gray-50);text-align:center">
+            <p style="font-size:18px;margin-bottom:4px">🔍</p>
+            <p style="font-size:12px;font-weight:600;color:var(--gray-700)">경쟁사 동향</p>
+            <p style="font-size:10px;color:var(--gray-400);margin-top:2px">자사 데이터와 연결 안 됨</p>
+          </div>
+          <div style="flex:1;max-width:160px;padding:14px 12px;border-radius:10px;border:1px solid var(--gray-200);background:var(--gray-50);text-align:center">
+            <p style="font-size:18px;margin-bottom:4px">🌤</p>
+            <p style="font-size:12px;font-weight:600;color:var(--gray-700)">외부 환경</p>
+            <p style="font-size:10px;color:var(--gray-400);margin-top:2px">날씨·연휴·검색량</p>
+          </div>
+          <div style="flex:1;max-width:160px;padding:14px 12px;border-radius:10px;border:1px solid var(--gray-200);background:var(--gray-50);text-align:center">
+            <p style="font-size:18px;margin-bottom:4px">📰</p>
+            <p style="font-size:12px;font-weight:600;color:var(--gray-700)">업계 뉴스</p>
+            <p style="font-size:10px;color:var(--gray-400);margin-top:2px">집행과 연결 짓기 어려움</p>
           </div>
         </div>
 
-        <!-- Divider -->
-        <div style="width:1px;background:var(--gray-100)"></div>
+        <!-- Arrow down (converge) -->
+        <div style="display:flex;flex-direction:column;align-items:center;padding:8px 0">
+          <div style="width:200px;height:1px;border-bottom:2px dashed var(--gray-300)"></div>
+          <svg width="16" height="20" style="margin-top:-1px"><path d="M8 0 L8 16 M3 11 L8 16 L13 11" stroke="var(--gray-400)" stroke-width="2" fill="none"/></svg>
+        </div>
 
-        <!-- Right: Insight + Cost -->
-        <div class="flex-1 flex flex-col gap-20">
-          <div style="display:flex;align-items:center;gap:8px">
-            <div style="width:6px;height:6px;border-radius:50%;background:var(--primary)"></div>
-            <p style="font-size:12px;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:1px">문제의 본질</p>
-          </div>
+        <!-- Step 2: 수동 조합 (병목) -->
+        <div style="padding:18px 32px;border-radius:12px;border:2px dashed var(--orange);background:rgba(249,115,22,.04);text-align:center;position:relative">
+          <p style="font-size:14px;font-weight:700;color:var(--gray-800)">마케터가 직접 수동 조합·해석</p>
+          <p style="font-size:12px;color:var(--gray-500);margin-top:4px">각각 다른 도구에서 수집 → 엑셀/머릿속에서 교차 분석</p>
+          <div style="position:absolute;top:-10px;right:-10px;background:var(--orange);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px">연 250시간+</div>
+        </div>
 
-          <div style="background:var(--gray-900);border-radius:14px;padding:28px;flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px">
-            <p style="font-size:14px;color:var(--gray-300);line-height:1.8">기온이 급상승하고, 연휴가 다가오고,<br>검색량이 급등하고, 경쟁사가 프로모션을<br>시작했다면 —</p>
-            <p style="font-size:18px;color:#fff;font-weight:700">이건 드문 집행 적기입니다.</p>
-            <p style="font-size:13px;color:var(--gray-400);line-height:1.7">하지만 이 시그널들이 각각 다른 도구에<br>흩어져 있어서, 마케터가 직접 조합해야 합니다.</p>
-          </div>
+        <!-- Arrow down -->
+        <div style="display:flex;flex-direction:column;align-items:center;padding:8px 0">
+          <svg width="16" height="20"><path d="M8 0 L8 16 M3 11 L8 16 L13 11" stroke="var(--gray-400)" stroke-width="2" fill="none"/></svg>
+        </div>
 
-          <!-- Cost metrics -->
-          <div class="flex gap-12">
-            <div style="flex:1;padding:18px;border-radius:12px;text-align:center;background:var(--gray-50);border:1px solid var(--gray-100)">
-              <p style="font-size:11px;color:var(--gray-400);font-weight:500">연간 수동 조합 비용</p>
-              <p style="font-size:28px;font-weight:800;color:var(--red);margin-top:6px">250시간+</p>
-            </div>
-            <div style="flex:1;padding:18px;border-radius:12px;text-align:center;background:var(--gray-50);border:1px solid var(--gray-100)">
-              <p style="font-size:11px;color:var(--gray-400);font-weight:500">판단에서 집행까지</p>
-              <p style="font-size:28px;font-weight:800;color:var(--red);margin-top:6px">수일 소요</p>
-            </div>
-          </div>
+        <!-- Step 3: 판단 지연 -->
+        <div style="padding:18px 32px;border-radius:12px;border:2px dashed var(--red);background:rgba(239,68,68,.04);text-align:center;position:relative">
+          <p style="font-size:14px;font-weight:700;color:var(--gray-800)">집행 타이밍 판단</p>
+          <p style="font-size:12px;color:var(--gray-500);margin-top:4px">감과 경험에 의존 — 확신 없이 결정</p>
+          <div style="position:absolute;top:-10px;right:-10px;background:var(--red);color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px">수일 소요</div>
+        </div>
+
+        <!-- Arrow down -->
+        <div style="display:flex;flex-direction:column;align-items:center;padding:8px 0">
+          <svg width="16" height="20"><path d="M8 0 L8 16 M3 11 L8 16 L13 11" stroke="var(--red)" stroke-width="2" fill="none"/></svg>
+        </div>
+
+        <!-- Step 4: 결과 -->
+        <div style="padding:14px 28px;border-radius:10px;background:var(--gray-900);text-align:center">
+          <p style="font-size:14px;font-weight:700;color:var(--red)">⚠️ 적기 이탈</p>
+          <p style="font-size:12px;color:var(--gray-400);margin-top:4px">"시그널은 있었지만, 조합이 늦었다"</p>
         </div>
       </div>
     </div>
@@ -393,9 +390,9 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
           </div>
         </div>
         <div class="flex-1" style="display:flex;align-items:center;justify-content:center;position:relative;background:var(--gray-900);border-radius:12px;overflow:hidden">
-          <video id="vid-briefing" class="solution-video active-video" src="video-briefing.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px"></video>
-          <video id="vid-analysis" class="solution-video" src="video-analysis.mp4" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
-          <video id="vid-campaign" class="solution-video" src="video-campaign.mp4" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
+          <video id="vid-briefing" class="solution-video active-video" src="video-briefing.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px"></video>
+          <video id="vid-analysis" class="solution-video" src="video-analysis.mov" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
+          <video id="vid-campaign" class="solution-video" src="video-campaign.mov" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
         </div>
       </div>
     </div>
@@ -424,64 +421,82 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
   </div>
 </div>
 
-<!-- Slide 7: Differentiation + Signal Flow -->
+<!-- Slide 7: Design Validation -->
 <div class="slide" data-slide="7">
   <div class="slide-inner" style="padding:44px 52px">
-    <span class="slide-badge">DATA VALIDATION</span>
+    <span class="slide-badge">DESIGN VALIDATION</span>
     <div class="flex flex-col gap-16" style="height:100%">
       <div class="flex flex-col gap-8">
         <div class="accent-line"></div>
-        <h2 style="font-size:22px">데이터 검증 — 구현 가능성 58% → 100%</h2>
-        <p style="font-size:13px;color:var(--gray-400)">Snowflake 4개 스키마 · 31개 테이블 · 2,350억 건을 전수조사하여<br>모든 UI 컴포넌트의 렌더링 필드를 1:1 매핑</p>
+        <h2 style="font-size:22px">설계 판단의 근거 — 그리기 전에 구현 가능성을 검증하다</h2>
+        <p style="font-size:13px;color:var(--gray-400)">"이 UI가 실제로 렌더링 가능한가?" — 기획 단계에서 먼저 확인하고,<br>불가능한 부분은 외부 데이터 + UX 대응으로 해결</p>
       </div>
 
       <div class="flex gap-24" style="flex:1">
-        <!-- Left: 검증 프로세스 -->
-        <div style="width:260px" class="flex flex-col gap-10">
-          <div style="padding:14px;background:var(--gray-50);border-radius:10px;border:1px solid var(--gray-100)">
-            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px">STEP 1 — 전수조사</p>
-            <p style="font-size:12px;color:var(--gray-600);line-height:1.6">36개 UI 컴포넌트의 모든 렌더링 필드를<br>Snowflake 테이블·컬럼과 1:1 매핑</p>
+        <!-- Left: PD 관점 설계 검증 프로세스 -->
+        <div style="width:280px" class="flex flex-col gap-10">
+          <div style="padding:16px;background:var(--gray-50);border-radius:10px;border:1px solid var(--gray-100)">
+            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:6px">WHY — 왜 기획자가 데이터를 검증하는가</p>
+            <p style="font-size:12px;color:var(--gray-600);line-height:1.7">"실데이터 기반 서비스"를 표방하면서<br>목업으로 채우면 심사에서 신뢰를 잃는다.<br><strong style="color:var(--gray-800)">설계 단계에서 렌더링 가능 여부를<br>먼저 확인해야 한다.</strong></p>
           </div>
           <div style="padding:14px;background:var(--gray-50);border-radius:10px;border:1px solid var(--gray-100)">
-            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px">STEP 2 — 갭 분석</p>
-            <p style="font-size:12px;color:var(--gray-600);line-height:1.6">구현 불가 항목 식별 →<br>UX 대응 전략 수립</p>
+            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px">STEP 1 — UI ↔ 데이터 매핑</p>
+            <p style="font-size:12px;color:var(--gray-600);line-height:1.6">36개 UI 컴포넌트의 렌더링 필드를<br>Snowflake 테이블·컬럼과 1:1 대조</p>
           </div>
           <div style="padding:14px;background:var(--gray-50);border-radius:10px;border:1px solid var(--gray-100)">
-            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px">STEP 3 — 보강</p>
-            <p style="font-size:12px;color:var(--gray-600);line-height:1.6">외부 API 5종 + AI 추론으로<br>나머지 42% 해결</p>
+            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px">STEP 2 — 갭 → UX 대응 설계</p>
+            <p style="font-size:12px;color:var(--gray-600);line-height:1.6">데이터 없는 UI는 삭제가 아니라<br>"대안 소스 + 폴백 UX"로 설계</p>
+          </div>
+          <div style="padding:14px;background:var(--gray-50);border-radius:10px;border:1px solid var(--gray-100)">
+            <p style="font-size:11px;color:var(--primary);font-weight:600;margin-bottom:4px">STEP 3 — 외부 API로 보강</p>
+            <p style="font-size:12px;color:var(--gray-600);line-height:1.6">날씨·공휴일·뉴스·앱 검색 API로<br>나머지 42%를 실데이터로 채움</p>
           </div>
           <div style="padding:12px;background:var(--primary-light);border-radius:10px;border:1px solid rgba(124,58,237,.15);margin-top:auto">
-            <p style="font-size:11px;color:var(--primary);font-weight:600">원칙</p>
-            <p style="font-size:11px;color:var(--gray-600);margin-top:2px">"목업으로 채우지 않고,<br>실데이터 기반으로 구현한다"</p>
+            <p style="font-size:11px;color:var(--primary);font-weight:600">설계 원칙</p>
+            <p style="font-size:11px;color:var(--gray-600);margin-top:2px">"데이터가 없으면 그리지 않는다.<br>대안을 찾거나, UX로 대응한다."</p>
           </div>
         </div>
 
-        <!-- Right: 데이터 소스 매핑 표 -->
-        <div class="flex-1 flex flex-col gap-10">
-          <table class="table-simple" style="font-size:11px">
-            <tr><th style="width:22%">데이터 소스</th><th style="width:16%">규모</th><th style="width:30%">활용</th><th style="width:12%">API</th><th style="width:12%">상태</th></tr>
-            <tr><td style="font-weight:600">Snowflake DMP</td><td style="color:var(--gray-500)">271억 건</td><td style="color:var(--gray-500)">사용자 세그먼트 · 교차사용</td><td>4개</td><td><span style="color:var(--green);font-weight:600">실데이터</span></td></tr>
-            <tr><td style="font-weight:600">Snowflake SSP</td><td style="color:var(--gray-500)">390억 건</td><td style="color:var(--gray-500)">채널별 CPM · 경쟁사 활동</td><td>4개</td><td><span style="color:var(--green);font-weight:600">실데이터</span></td></tr>
-            <tr><td style="font-weight:600">Snowflake ATD</td><td style="color:var(--gray-500)">225만 건</td><td style="color:var(--gray-500)">채널 성과 · ROAS · CPI</td><td>4개</td><td><span style="color:var(--green);font-weight:600">실데이터</span></td></tr>
-            <tr><td style="font-weight:600">Snowflake DSP</td><td style="color:var(--gray-500)">1,690억 건</td><td style="color:var(--gray-500)">노출·전환 · 지역 분석</td><td>4개</td><td><span style="color:var(--green);font-weight:600">실데이터</span></td></tr>
-            <tr style="background:var(--gray-50)"><td style="font-weight:600">Open-Meteo</td><td style="color:var(--gray-500)">실시간</td><td style="color:var(--gray-500)">기온 변화 → 수요 예측</td><td>1개</td><td><span style="color:var(--blue);font-weight:600">외부 API</span></td></tr>
-            <tr style="background:var(--gray-50)"><td style="font-weight:600">공휴일 API</td><td style="color:var(--gray-500)">실시간</td><td style="color:var(--gray-500)">연휴 → 쇼핑 수요 예측</td><td>1개</td><td><span style="color:var(--blue);font-weight:600">외부 API</span></td></tr>
-            <tr style="background:var(--gray-50)"><td style="font-weight:600">Google News</td><td style="color:var(--gray-500)">실시간</td><td style="color:var(--gray-500)">트렌드 · 뉴스 · 경쟁사</td><td>1개</td><td><span style="color:var(--blue);font-weight:600">외부 API</span></td></tr>
-            <tr style="background:var(--gray-50)"><td style="font-weight:600">모바일인덱스</td><td style="color:var(--gray-500)">50,000+ 앱</td><td style="color:var(--gray-500)">앱 검색 · 아이콘 URL</td><td>2개</td><td><span style="color:var(--blue);font-weight:600">외부 API</span></td></tr>
-            <tr style="background:var(--gray-50)"><td style="font-weight:600">Claude AI</td><td style="color:var(--gray-500)">—</td><td style="color:var(--gray-500)">복합 시그널 추론 · 브리핑</td><td>1개</td><td><span style="color:var(--primary);font-weight:600">LLM</span></td></tr>
-          </table>
+        <!-- Right: 결과 — Before/After + 핵심 수치 -->
+        <div class="flex-1 flex flex-col gap-12">
+          <!-- Before/After 비교 -->
+          <div class="flex gap-12">
+            <div style="flex:1;padding:18px;background:var(--gray-50);border-radius:12px;border:1px solid var(--gray-100)">
+              <p style="font-size:11px;color:var(--red);font-weight:600;margin-bottom:8px">BEFORE — 기획 초안</p>
+              <p style="font-size:13px;color:var(--gray-600);line-height:1.7">UI 컴포넌트 36개 설계<br>→ Snowflake에서 렌더링 가능: <strong style="color:var(--red)">58%</strong><br>→ 나머지 42%는 데이터 소스 없음</p>
+            </div>
+            <div style="flex:1;padding:18px;background:var(--gray-50);border-radius:12px;border:1px solid var(--gray-100)">
+              <p style="font-size:11px;color:var(--green);font-weight:600;margin-bottom:8px">AFTER — 검증 후 설계</p>
+              <p style="font-size:13px;color:var(--gray-600);line-height:1.7">외부 API 5종으로 갭 해소<br>→ 구현 가능: <strong style="color:var(--green)">100%</strong><br>→ 목업/더미 데이터: <strong style="color:var(--green)">0건</strong></p>
+            </div>
+          </div>
+
+          <!-- 데이터 소스 요약 (PD 관점) -->
+          <div style="flex:1;overflow:auto">
+            <table class="table-simple" style="font-size:11px">
+              <tr><th style="width:22%">데이터 소스</th><th style="width:35%">설계에서의 역할</th><th style="width:25%">UX 대응</th><th style="width:18%">상태</th></tr>
+              <tr><td style="font-weight:600">Snowflake 4개 스키마</td><td style="color:var(--gray-500)">사용자·시장·경쟁·채널 분석 UI 렌더링</td><td style="color:var(--gray-500)">직접 매핑 (16개 API)</td><td><span style="color:var(--green);font-weight:600">✓ 실데이터</span></td></tr>
+              <tr><td style="font-weight:600">Open-Meteo</td><td style="color:var(--gray-500)">기온 변화 → 수요 예측 시그널</td><td style="color:var(--gray-500)">폴백: "데이터 수집 중" 상태</td><td><span style="color:var(--blue);font-weight:600">✓ 외부 API</span></td></tr>
+              <tr><td style="font-weight:600">공휴일 API</td><td style="color:var(--gray-500)">연휴 → 쇼핑 수요 예측 시그널</td><td style="color:var(--gray-500)">폴백: 수동 입력 UI</td><td><span style="color:var(--blue);font-weight:600">✓ 외부 API</span></td></tr>
+              <tr><td style="font-weight:600">Google News</td><td style="color:var(--gray-500)">트렌드·뉴스 기반 브리핑 생성</td><td style="color:var(--gray-500)">폴백: 캐시된 최근 뉴스</td><td><span style="color:var(--blue);font-weight:600">✓ 외부 API</span></td></tr>
+              <tr><td style="font-weight:600">모바일인덱스</td><td style="color:var(--gray-500)">앱 검색 · 아이콘 · 경쟁사 데이터</td><td style="color:var(--gray-500)">폴백: 텍스트 기반 검색</td><td><span style="color:var(--blue);font-weight:600">✓ 외부 API</span></td></tr>
+              <tr><td style="font-weight:600">Claude AI</td><td style="color:var(--gray-500)">복합 시그널 추론 → 브리핑 문장 생성</td><td style="color:var(--gray-500)">폴백: 규칙 기반 요약</td><td><span style="color:var(--primary);font-weight:600">✓ LLM</span></td></tr>
+            </table>
+          </div>
+
+          <!-- 핵심 수치 -->
           <div class="flex gap-10">
             <div style="flex:1;padding:12px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-100);text-align:center">
-              <p style="font-size:10px;color:var(--gray-400)">총 API 라우트</p>
-              <p style="font-size:20px;font-weight:800;color:var(--primary)">24개</p>
+              <p style="font-size:10px;color:var(--gray-400)">UI ↔ 데이터 매핑률</p>
+              <p style="font-size:20px;font-weight:800;color:var(--primary)">100%</p>
             </div>
             <div style="flex:1;padding:12px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-100);text-align:center">
-              <p style="font-size:10px;color:var(--gray-400)">구현 가능성</p>
-              <p style="font-size:20px;font-weight:800;color:var(--primary)">58% → 100%</p>
-            </div>
-            <div style="flex:1;padding:12px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-100);text-align:center">
-              <p style="font-size:10px;color:var(--gray-400)">목업 데이터</p>
+              <p style="font-size:10px;color:var(--gray-400)">목업/더미 데이터</p>
               <p style="font-size:20px;font-weight:800;color:var(--green)">0건</p>
+            </div>
+            <div style="flex:1;padding:12px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-100);text-align:center">
+              <p style="font-size:10px;color:var(--gray-400)">폴백 UX 설계</p>
+              <p style="font-size:20px;font-weight:800;color:var(--primary)">5개</p>
             </div>
           </div>
         </div>
