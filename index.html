@@ -95,10 +95,42 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
 <div class="progress" id="progress"></div>
 <div class="deck" id="deck">
 
-<!-- Slide 0: Interactive Hero (from v2) -->
+<!-- Slide 0: Interactive Hero (inline) -->
 <div class="slide active" data-slide="0">
-  <div class="slide-inner" style="padding:0;overflow:hidden;border-radius:16px">
-    <iframe src="hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
+  <div class="slide-inner" style="padding:0;overflow:hidden;border-radius:16px;background:#050508;position:relative">
+    <!-- Background effects -->
+    <div style="position:absolute;inset:0;opacity:0.06;background-image:linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px);background-size:90px 90px"></div>
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 50%,transparent,#050508 100%)"></div>
+    <div id="hero-glow" style="position:absolute;top:25%;left:30%;width:500px;height:400px;filter:blur(130px);border-radius:50%;background:rgba(124,58,237,0.25);opacity:0.8"></div>
+    <!-- Hero content -->
+    <div style="position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:20px">
+      <p style="font-size:24px;color:rgba(255,255,255,0.6);letter-spacing:0.14em;font-weight:400">당신의 브랜드는 지금?</p>
+      <div style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:999px;padding:24px 56px;backdrop-filter:blur(16px);gap:20px">
+        <span style="font-size:20px;color:rgba(255,255,255,0.35);font-weight:500">MI Signal</span>
+        <span style="width:1.5px;height:32px;background:var(--primary);opacity:0.7"></span>
+        <span style="font-size:32px;font-weight:700;color:#fff">컬리</span>
+        <span style="width:12px;height:12px;border-radius:50%;background:#a855f7;box-shadow:0 0 24px #a855f7,0 0 48px rgba(168,85,247,0.2)"></span>
+        <span style="font-size:24px;font-weight:500;color:#d8b4fe">성장 기회</span>
+      </div>
+      <p style="font-size:14px;color:rgba(255,255,255,0.18);letter-spacing:0.06em;margin-top:12px">흩어진 시그널을 연결해, 지금 집행해야 할 이유를 판단합니다</p>
+      <!-- Signal cards -->
+      <div style="position:absolute;top:18%;left:8%;background:rgba(255,255,255,0.025);border:1px solid rgba(168,85,247,0.12);border-radius:14px;padding:12px 18px;backdrop-filter:blur(8px)">
+        <p style="font-size:11px;color:#d8b4fe;font-weight:500;margin-bottom:3px">검색 트렌드</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.8)">장보기 관심 상승</p>
+      </div>
+      <div style="position:absolute;bottom:22%;left:10%;background:rgba(255,255,255,0.025);border:1px solid rgba(168,85,247,0.12);border-radius:14px;padding:12px 18px;backdrop-filter:blur(8px)">
+        <p style="font-size:11px;color:#d8b4fe;font-weight:500;margin-bottom:3px">날씨 시그널</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.8)">식품 수요 확대</p>
+      </div>
+      <div style="position:absolute;top:18%;right:8%;background:rgba(255,255,255,0.025);border:1px solid rgba(168,85,247,0.12);border-radius:14px;padding:12px 18px;backdrop-filter:blur(8px)">
+        <p style="font-size:11px;color:#d8b4fe;font-weight:500;margin-bottom:3px">사용자 지표</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.8)">재방문 세그먼트 증가</p>
+      </div>
+      <div style="position:absolute;bottom:22%;right:10%;background:rgba(255,255,255,0.025);border:1px solid rgba(168,85,247,0.12);border-radius:14px;padding:12px 18px;backdrop-filter:blur(8px)">
+        <p style="font-size:11px;color:#d8b4fe;font-weight:500;margin-bottom:3px">채널 효율</p>
+        <p style="font-size:14px;color:rgba(255,255,255,0.8)">저녁 전환 우세</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -137,7 +169,7 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
             </div>
             <!-- Video content -->
             <div style="border-radius:0 0 8px 8px;overflow:hidden;background:#fff">
-              <video src="video-hero.mov" autoplay muted loop playsinline style="width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover"></video>
+              <video src="video-hero.mp4" autoplay muted loop playsinline style="width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover"></video>
             </div>
           </div>
         </div>
@@ -390,9 +422,9 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600);word-break:keep-all
           </div>
         </div>
         <div class="flex-1" style="display:flex;align-items:center;justify-content:center;position:relative;background:var(--gray-900);border-radius:12px;overflow:hidden">
-          <video id="vid-briefing" class="solution-video active-video" src="video-briefing.mov" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px"></video>
-          <video id="vid-analysis" class="solution-video" src="video-analysis.mov" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
-          <video id="vid-campaign" class="solution-video" src="video-campaign.mov" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
+          <video id="vid-briefing" class="solution-video active-video" src="video-briefing.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px"></video>
+          <video id="vid-analysis" class="solution-video" src="video-analysis.mp4" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
+          <video id="vid-campaign" class="solution-video" src="video-campaign.mp4" muted loop playsinline style="width:100%;height:100%;object-fit:cover;border-radius:12px;display:none"></video>
         </div>
       </div>
     </div>
