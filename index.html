@@ -98,51 +98,61 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
 <!-- Slide 0: Interactive Hero (from v2) -->
 <div class="slide active" data-slide="0">
   <div class="slide-inner" style="padding:0;overflow:hidden;border-radius:16px">
-    <iframe src="../hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
+    <iframe src="hero-v2-proto.html" style="width:100%;height:100%;border:none;border-radius:16px"></iframe>
   </div>
 </div>
 
-<!-- Slide 1: Hero with Screenshot (Light) -->
+<!-- Slide 1: Hero with Video (Light + Macbook Mockup) -->
 <div class="slide" data-slide="1">
-  <div class="slide-inner" style="padding:0;display:flex;flex-direction:row;background:#fafafa">
-    <div style="flex:1;padding:56px 48px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2">
-      <div class="flex flex-col gap-20" style="position:relative">
-        <div class="flex items-center gap-8">
-          <div style="width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite"></div>
-          <span style="font-size:12px;color:var(--primary);font-weight:600;letter-spacing:1px">LIVE SERVICE</span>
-        </div>
-        <h1 style="font-size:44px;color:var(--gray-900);line-height:1.2">MI Signal</h1>
-        <p style="font-size:17px;color:var(--gray-500);line-height:1.6;max-width:420px">자사 앱 데이터 + 외부 시그널 5종을 결합해,<br>지금이 광고를 집행할 최적 타이밍인지<br>알려주는 인텔리전스 플랫폼</p>
-        <div class="flex gap-12" style="margin-top:8px">
-          <a href="https://feature-hazel.d2n8i0hp2faia9.amplifyapp.com/" target="_blank" class="link-btn">
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 1h6v6M13 1L6 8M5 3H2a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V9"/></svg>
-            라이브 데모 보기
-          </a>
-          <span style="font-size:12px;color:var(--gray-400);display:flex;align-items:center">AWS Amplify 배포</span>
+  <div class="slide-inner" style="padding:48px 56px;display:flex;flex-direction:column;gap:24px;background:#fff">
+    <div class="flex items-center gap-8">
+      <div style="width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite"></div>
+      <span style="font-size:12px;color:var(--primary);font-weight:600;letter-spacing:1px">LIVE SERVICE</span>
+      <span style="font-size:12px;color:var(--gray-400);margin-left:auto">AWS Amplify 배포</span>
+    </div>
+    <div class="flex gap-32" style="flex:1;align-items:center">
+      <div style="width:280px" class="flex flex-col gap-16">
+        <h1 style="font-size:40px;color:var(--gray-900);line-height:1.2">MI Signal</h1>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7">자사 앱 데이터 + 외부 시그널 5종을 결합해, 지금이 광고를 집행할 최적 타이밍인지 알려주는 인텔리전스 플랫폼</p>
+        <a href="https://feature-hazel.d2n8i0hp2faia9.amplifyapp.com/" target="_blank" class="link-btn" style="width:fit-content">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 1h6v6M13 1L6 8M5 3H2a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V9"/></svg>
+          라이브 데모 보기
+        </a>
+      </div>
+      <!-- Macbook-style mockup frame -->
+      <div class="flex-1" style="display:flex;align-items:center;justify-content:center">
+        <div style="width:100%;max-width:680px;position:relative">
+          <!-- Macbook body -->
+          <div style="background:#f4f4f5;border-radius:16px;padding:12px 12px 8px 12px;box-shadow:0 24px 80px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.04);border:1px solid var(--gray-200)">
+            <!-- Browser chrome -->
+            <div style="background:#fff;border-radius:8px 8px 0 0;padding:8px 12px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--gray-100)">
+              <div style="display:flex;gap:5px">
+                <div style="width:10px;height:10px;border-radius:50%;background:#ff5f57"></div>
+                <div style="width:10px;height:10px;border-radius:50%;background:#febc2e"></div>
+                <div style="width:10px;height:10px;border-radius:50%;background:#28c840"></div>
+              </div>
+              <div style="flex:1;display:flex;justify-content:center">
+                <div style="background:var(--gray-100);border-radius:4px;padding:3px 12px;font-size:10px;color:var(--gray-500);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">feature-hazel.d2n8i0hp2faia9.amplifyapp.com</div>
+              </div>
+            </div>
+            <!-- Video content -->
+            <div style="border-radius:0 0 8px 8px;overflow:hidden;background:#fff">
+              <video src="video-hero.mov" autoplay muted loop playsinline style="width:100%;height:auto;display:block;aspect-ratio:16/10;object-fit:cover"></video>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div style="flex:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--gray-100)">
-      <img src="screenshot-service.png" alt="MI Signal 서비스 화면" style="width:105%;height:95%;object-fit:cover;object-position:left center;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.1)">
-    </div>
   </div>
 </div>
 
-<!-- Slide 2: Cover (Light) -->
+<!-- Slide 2: Cover (White) -->
 <div class="slide" data-slide="2">
-  <div class="slide-inner" style="background:linear-gradient(160deg,#faf5ff 0%,#f3e8ff 30%,#ede9fe 60%,#e9d5ff 100%);position:relative;overflow:hidden">
-    <!-- Decorative elements -->
-    <div style="position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(124,58,237,.08) 0%,transparent 70%);border-radius:50%"></div>
-    <div style="position:absolute;bottom:-40px;left:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(124,58,237,.06) 0%,transparent 70%);border-radius:50%"></div>
-    <div style="position:absolute;top:40px;right:60px;width:3px;height:3px;background:var(--primary);border-radius:50%;opacity:.4"></div>
-    <div style="position:absolute;top:120px;right:180px;width:4px;height:4px;background:var(--primary);border-radius:50%;opacity:.3"></div>
-    <div style="position:absolute;bottom:140px;right:100px;width:3px;height:3px;background:var(--primary);border-radius:50%;opacity:.35"></div>
-
+  <div class="slide-inner" style="background:#fff;position:relative;overflow:hidden">
     <div class="flex flex-col gap-24" style="position:relative;z-index:1;justify-content:center;height:100%">
       <!-- Award badge -->
-      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.15);border-radius:40px;width:fit-content">
-        <span style="font-size:16px">🏆</span>
-        <span style="font-size:13px;font-weight:600;color:var(--primary);letter-spacing:.3px">AI Championship Season 1 · 17팀 중 3등 수상</span>
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:40px;width:fit-content">
+        <span style="font-size:13px;font-weight:600;color:var(--primary);letter-spacing:.3px">AI Championship Season 1 · 34팀 중 1등 수상</span>
       </div>
 
       <!-- Title -->
@@ -153,17 +163,17 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
       </div>
 
       <!-- Meta info -->
-      <div class="flex gap-20 items-center" style="margin-top:auto;padding:20px 24px;background:rgba(255,255,255,.7);backdrop-filter:blur(8px);border-radius:12px;border:1px solid rgba(124,58,237,.08)">
+      <div class="flex gap-20 items-center" style="margin-top:auto;padding:20px 24px;background:var(--gray-50);border-radius:12px;border:1px solid var(--gray-200)">
         <div class="flex flex-col gap-4">
           <p style="font-size:11px;color:var(--gray-400);text-transform:uppercase;letter-spacing:1px;font-weight:600">Role</p>
           <p style="font-size:14px;font-weight:600;color:var(--gray-800)">Product Designer · 기획~구현 전 과정</p>
         </div>
-        <div style="width:1px;height:36px;background:rgba(124,58,237,.15)"></div>
+        <div style="width:1px;height:36px;background:var(--gray-200)"></div>
         <div class="flex flex-col gap-4">
           <p style="font-size:11px;color:var(--gray-400);text-transform:uppercase;letter-spacing:1px;font-weight:600">Team</p>
           <p style="font-size:14px;font-weight:600;color:var(--gray-800)">2인 (PD + FE) · Kiro 풀타임 활용</p>
         </div>
-        <div style="width:1px;height:36px;background:rgba(124,58,237,.15)"></div>
+        <div style="width:1px;height:36px;background:var(--gray-200)"></div>
         <div class="flex flex-col gap-4">
           <p style="font-size:11px;color:var(--gray-400);text-transform:uppercase;letter-spacing:1px;font-weight:600">Duration</p>
           <p style="font-size:14px;font-weight:600;color:var(--gray-800)">12일 (2026.04)</p>
@@ -188,25 +198,25 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
       <div class="grid-4">
         <div style="background:linear-gradient(135deg,#faf5ff,#ede9fe);border:1px solid rgba(124,58,237,.12);border-radius:14px;padding:22px 16px;text-align:center;position:relative;overflow:hidden">
           <div style="position:absolute;top:-8px;right:-8px;width:40px;height:40px;background:rgba(124,58,237,.06);border-radius:50%"></div>
-          <p style="font-size:20px;margin-bottom:6px">⚡</p>
+          <p style="font-size:20px;margin-bottom:6px"></p>
           <p class="big-number" style="font-size:44px">12</p>
           <p style="font-size:12px;color:var(--gray-500);font-weight:500;margin-top:6px">일 개발 기간</p>
         </div>
         <div style="background:linear-gradient(135deg,#faf5ff,#ede9fe);border:1px solid rgba(124,58,237,.12);border-radius:14px;padding:22px 16px;text-align:center;position:relative;overflow:hidden">
           <div style="position:absolute;top:-8px;right:-8px;width:40px;height:40px;background:rgba(124,58,237,.06);border-radius:50%"></div>
-          <p style="font-size:20px;margin-bottom:6px">🧩</p>
+          <p style="font-size:20px;margin-bottom:6px"></p>
           <p class="big-number" style="font-size:44px">44</p>
           <p style="font-size:12px;color:var(--gray-500);font-weight:500;margin-top:6px">React 컴포넌트</p>
         </div>
         <div style="background:linear-gradient(135deg,#faf5ff,#ede9fe);border:1px solid rgba(124,58,237,.12);border-radius:14px;padding:22px 16px;text-align:center;position:relative;overflow:hidden">
           <div style="position:absolute;top:-8px;right:-8px;width:40px;height:40px;background:rgba(124,58,237,.06);border-radius:50%"></div>
-          <p style="font-size:20px;margin-bottom:6px">🔌</p>
+          <p style="font-size:20px;margin-bottom:6px"></p>
           <p class="big-number" style="font-size:44px">24</p>
           <p style="font-size:12px;color:var(--gray-500);font-weight:500;margin-top:6px">API 라우트</p>
         </div>
         <div style="background:linear-gradient(135deg,#faf5ff,#ede9fe);border:1px solid rgba(124,58,237,.12);border-radius:14px;padding:22px 16px;text-align:center;position:relative;overflow:hidden">
           <div style="position:absolute;top:-8px;right:-8px;width:40px;height:40px;background:rgba(124,58,237,.06);border-radius:50%"></div>
-          <p style="font-size:20px;margin-bottom:6px">📊</p>
+          <p style="font-size:20px;margin-bottom:6px"></p>
           <p class="big-number" style="font-size:44px">50K+</p>
           <p style="font-size:12px;color:var(--gray-500);font-weight:500;margin-top:6px">분석 가능 앱</p>
         </div>
@@ -258,7 +268,7 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
         <div class="accent-line"></div>
         <h2 style="font-size:26px">마케터가 매일 아침 답을 찾는 질문</h2>
         <div style="display:inline-flex;align-items:center;gap:10px;padding:10px 20px;background:linear-gradient(135deg,#faf5ff,#ede9fe);border-radius:10px;border:1px solid rgba(124,58,237,.12);width:fit-content">
-          <span style="font-size:18px">💭</span>
+          <span style="font-size:18px"></span>
           <p style="font-size:20px;font-weight:700;color:var(--primary)">"지금이 광고를 집행할 타이밍인가?"</p>
         </div>
       </div>
@@ -412,47 +422,80 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
   </div>
 </div>
 
-<!-- Slide 7: Differentiation + Business -->
+<!-- Slide 7: Differentiation + Signal Flow -->
 <div class="slide" data-slide="7">
-  <div class="slide-inner">
-    <span class="slide-badge">DIFFERENTIATION</span>
-    <div class="flex flex-col gap-20">
+  <div class="slide-inner" style="padding:40px 48px">
+    <span class="slide-badge">SIGNAL FLOW</span>
+    <div class="flex flex-col gap-16">
       <div class="flex flex-col gap-8">
         <div class="accent-line"></div>
-        <h2 style="font-size:24px">왜 IGAW만 할 수 있는가 — 데이터 생태계 통합</h2>
+        <h2 style="font-size:22px">이 조합은 IGAW만 가능하다 — 데이터 생태계 통합</h2>
       </div>
-      <div class="flex gap-24">
-        <div class="flex-1 flex flex-col gap-12">
-          <table class="table-simple" style="font-size:12px">
-            <tr><th style="width:30%">IGAW 자산</th><th>MI Signal에서의 역할</th></tr>
-            <tr><td style="font-weight:600">DMP 수천만 ADID</td><td style="color:var(--gray-500)">사용자 세그먼트 + 교차사용 분석</td></tr>
-            <tr><td style="font-weight:600">SSP 광고 로그</td><td style="color:var(--gray-500)">채널별 CPM + 경쟁사 광고 활동 감지</td></tr>
-            <tr><td style="font-weight:600">ATD 채널 성과</td><td style="color:var(--gray-500)">멀티채널 ROAS + CPI 벤치마크</td></tr>
-            <tr><td style="font-weight:600">모바일인덱스</td><td style="color:var(--gray-500)">경쟁사 MAU/DAU + 50,000+ 앱 검색</td></tr>
-            <tr><td style="font-weight:600">MI Ads</td><td style="color:var(--gray-500)">분석 → 집행 원클릭 연결</td></tr>
-          </table>
-          <div class="card-dark" style="padding:14px;border:none">
-            <p style="font-size:12px;color:var(--gray-300);line-height:1.7">이 5개 데이터 소스를 하나의 서비스에서 결합할 수 있는 건 IGAW뿐입니다.<br>외부 업체가 이 조합을 재현하기 어렵습니다.</p>
-          </div>
+      <!-- Signal Flow Diagram -->
+      <div style="flex:1;display:flex;align-items:center;justify-content:center">
+        <svg viewBox="0 0 900 360" width="100%" height="320" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:860px">
+          <!-- Connection lines from sources to AI -->
+          <path d="M90 68 L450 160" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 3"/>
+          <path d="M250 68 L450 160" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 3"/>
+          <path d="M450 68 L450 160" stroke="#7c3aed" stroke-width="1.5"/>
+          <path d="M650 68 L450 160" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 3"/>
+          <path d="M810 68 L450 160" stroke="#a78bfa" stroke-width="1" stroke-dasharray="4 3"/>
+          <!-- Connection lines from AI to outputs -->
+          <path d="M450 210 L200 290" stroke="#7c3aed" stroke-width="1.5"/>
+          <path d="M450 210 L450 290" stroke="#7c3aed" stroke-width="1.5"/>
+          <path d="M450 210 L700 290" stroke="#7c3aed" stroke-width="1.5"/>
+          <!-- Dots at connection points -->
+          <circle cx="450" cy="160" r="4" fill="#7c3aed"/>
+          <circle cx="200" cy="290" r="4" fill="#7c3aed"/>
+          <circle cx="450" cy="290" r="4" fill="#7c3aed"/>
+          <circle cx="700" cy="290" r="4" fill="#7c3aed"/>
+          <!-- Source boxes (top) -->
+          <rect x="40" y="34" width="100" height="46" rx="8" fill="#fff" stroke="#e9d5ff" stroke-width="1.5"/>
+          <text x="90" y="54" text-anchor="middle" font-size="12" font-weight="600" fill="#6d28d9">Weather</text>
+          <text x="90" y="70" text-anchor="middle" font-size="10" fill="#9ca3af">Open-Meteo</text>
+          <rect x="200" y="34" width="100" height="46" rx="8" fill="#fff" stroke="#e9d5ff" stroke-width="1.5"/>
+          <text x="250" y="54" text-anchor="middle" font-size="12" font-weight="600" fill="#6d28d9">Holiday</text>
+          <text x="250" y="70" text-anchor="middle" font-size="10" fill="#9ca3af">공휴일</text>
+          <rect x="400" y="34" width="100" height="46" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+          <text x="450" y="54" text-anchor="middle" font-size="12" font-weight="600" fill="#6d28d9">Market</text>
+          <text x="450" y="70" text-anchor="middle" font-size="10" fill="#9ca3af">모바일인덱스</text>
+          <rect x="600" y="34" width="100" height="46" rx="8" fill="#fff" stroke="#e9d5ff" stroke-width="1.5"/>
+          <text x="650" y="54" text-anchor="middle" font-size="12" font-weight="600" fill="#6d28d9">News</text>
+          <text x="650" y="70" text-anchor="middle" font-size="10" fill="#9ca3af">Google RSS</text>
+          <rect x="760" y="34" width="100" height="46" rx="8" fill="#fff" stroke="#e9d5ff" stroke-width="1.5"/>
+          <text x="810" y="54" text-anchor="middle" font-size="12" font-weight="600" fill="#6d28d9">Compete</text>
+          <text x="810" y="70" text-anchor="middle" font-size="10" fill="#9ca3af">Snowflake</text>
+          <!-- AI Engine (center) -->
+          <rect x="320" y="155" width="260" height="54" rx="12" fill="url(#gSig7)"/>
+          <text x="450" y="180" text-anchor="middle" font-size="14" font-weight="600" fill="#fff">Claude Sonnet 4.6</text>
+          <text x="450" y="198" text-anchor="middle" font-size="11" fill="rgba(255,255,255,.7)">복합 시그널 추론</text>
+          <!-- Output boxes (bottom) -->
+          <rect x="130" y="280" width="140" height="48" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+          <text x="200" y="302" text-anchor="middle" font-size="13" font-weight="600" fill="#7c3aed">브리핑</text>
+          <text x="200" y="318" text-anchor="middle" font-size="11" fill="#6b7280">타이밍 판단</text>
+          <rect x="380" y="280" width="140" height="48" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+          <text x="450" y="302" text-anchor="middle" font-size="13" font-weight="600" fill="#7c3aed">분석</text>
+          <text x="450" y="318" text-anchor="middle" font-size="11" fill="#6b7280">4관점</text>
+          <rect x="630" y="280" width="140" height="48" rx="8" fill="#fff" stroke="#7c3aed" stroke-width="2"/>
+          <text x="700" y="302" text-anchor="middle" font-size="13" font-weight="600" fill="#7c3aed">캠페인</text>
+          <text x="700" y="318" text-anchor="middle" font-size="11" fill="#6b7280">MI Ads</text>
+          <!-- Gradient def -->
+          <defs><linearGradient id="gSig7" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#6d28d9"/></linearGradient></defs>
+        </svg>
+      </div>
+      <!-- Bottom: Business synergy -->
+      <div class="flex gap-16 justify-center">
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 18px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-200)">
+          <span style="font-size:11px;font-weight:700;color:var(--primary)">01</span>
+          <span style="font-size:12px;color:var(--gray-600)">MobileIndex 업셀</span>
         </div>
-        <div style="width:340px" class="flex flex-col gap-12">
-          <h3 style="font-size:14px">기존 제품과의 시너지</h3>
-          <div class="card flex flex-col gap-6" style="padding:14px">
-            <p style="font-size:12px"><span style="font-weight:600;color:var(--primary)">모바일인덱스</span></p>
-            <p style="font-size:11px;color:var(--gray-500)">"보기만 하던 데이터"를 집행 의사결정으로 연결 → 프리미엄 업셀</p>
-          </div>
-          <div class="card flex flex-col gap-6" style="padding:14px">
-            <p style="font-size:12px"><span style="font-weight:600;color:var(--primary)">MI Ads</span></p>
-            <p style="font-size:11px;color:var(--gray-500)">데이터가 집행 의사를 만들고, 의사가 집행을 만듦 → 집행량 증가</p>
-          </div>
-          <div class="card flex flex-col gap-6" style="padding:14px">
-            <p style="font-size:12px"><span style="font-weight:600;color:var(--primary)">DMP/SSP/ATD</span></p>
-            <p style="font-size:11px;color:var(--gray-500)">자사 데이터 자산을 광고주에게 직접 가치로 전달 → 데이터 수익화</p>
-          </div>
-          <div class="card" style="padding:12px;background:var(--primary-light)">
-            <p style="font-size:11px;color:var(--primary);font-weight:600">비즈니스 임팩트</p>
-            <p style="font-size:11px;color:var(--gray-600);margin-top:3px">MI Ads 집행량 증가 + 모바일인덱스 업셀 + 데이터 수익화 3중 구조</p>
-          </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 18px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-200)">
+          <span style="font-size:11px;font-weight:700;color:var(--primary)">02</span>
+          <span style="font-size:12px;color:var(--gray-600)">MI Ads 집행 증가</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;padding:10px 18px;background:var(--gray-50);border-radius:8px;border:1px solid var(--gray-200)">
+          <span style="font-size:11px;font-weight:700;color:var(--primary)">03</span>
+          <span style="font-size:12px;color:var(--gray-600)">DMP/SSP/ATD 데이터 수익화</span>
         </div>
       </div>
     </div>
@@ -470,22 +513,22 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
       </div>
       <div class="grid-2" style="gap:16px">
         <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><span style="font-size:18px">🎯</span><h3 style="font-size:14px">포지셔닝 전환</h3></div>
+          <div class="flex items-center gap-8"><h3 style="font-size:14px">포지셔닝 전환</h3></div>
           <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">Before:</strong> 광고 실행 효율화 (편의성 도구)<br><strong style="color:var(--primary)">After:</strong> 광고를 하고 싶게 만드는 수요 창출 플랫폼</p>
           <p style="font-size:11px;color:var(--gray-400)">근거: 경영진 워크숍 "편의성은 기본값이지 셀링 포인트가 아니다"</p>
         </div>
         <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><span style="font-size:18px">📐</span><h3 style="font-size:14px">페이지 구조 변경</h3></div>
+          <div class="flex items-center gap-8"><h3 style="font-size:14px">페이지 구조 변경</h3></div>
           <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">Before:</strong> 4페이지 분리 구조<br><strong style="color:var(--primary)">After:</strong> 3탭 단일 페이지 (서비스·브리핑·분석)</p>
           <p style="font-size:11px;color:var(--gray-400)">근거: 데모 시연 시 페이지 전환이 스토리텔링을 끊는 문제</p>
         </div>
         <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><span style="font-size:18px">🗄️</span><h3 style="font-size:14px">데이터 전략</h3></div>
+          <div class="flex items-center gap-8"><h3 style="font-size:14px">데이터 전략</h3></div>
           <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">문제:</strong> 구현 가능성 58%<br><strong style="color:var(--primary)">해결:</strong> 외부 API 5종 + UX 대응 설계 → 100%</p>
           <p style="font-size:11px;color:var(--gray-400)">원칙: "목업으로 채우지 않고, 실데이터 기반으로 구현한다"</p>
         </div>
         <div class="card flex flex-col gap-10" style="padding:18px">
-          <div class="flex items-center gap-8"><span style="font-size:18px">⚡</span><h3 style="font-size:14px">HTML→React 마이그레이션</h3></div>
+          <div class="flex items-center gap-8"><h3 style="font-size:14px">HTML→React 마이그레이션</h3></div>
           <p style="font-size:12px;color:var(--gray-500);line-height:1.7"><strong style="color:var(--gray-800)">상황:</strong> 4,000줄 HTML → iframe 임베드<br><strong style="color:var(--primary)">결정:</strong> iframe 폐기 → Tailwind + React 완전 재구현</p>
           <p style="font-size:11px;color:var(--gray-400)">사유: React 컨텍스트 단절, SEO 불가, 접근성 위반</p>
         </div>
@@ -522,11 +565,11 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
           <div class="card flex flex-col gap-6" style="padding:16px">
             <p style="font-size:11px;color:var(--gray-400)">산출물</p>
             <div class="flex flex-col gap-4" style="font-size:12px;color:var(--gray-600)">
-              <p>📄 리서치 문서 25편</p>
-              <p>🧩 React 컴포넌트 44개</p>
-              <p>🔌 API 라우트 24개</p>
-              <p>🎨 디자인 토큰 50+</p>
-              <p>✅ QA 수정 30건</p>
+              <p>리서치 문서 25편</p>
+              <p>React 컴포넌트 44개</p>
+              <p>API 라우트 24개</p>
+              <p>디자인 토큰 50+</p>
+              <p>QA 수정 30건</p>
             </div>
           </div>
         </div>
@@ -632,15 +675,15 @@ p,.desc{font-size:16px;line-height:1.7;color:var(--gray-600)}
       <div class="flex gap-32">
         <div class="flex-1 flex flex-col gap-16">
           <div>
-            <h3 style="font-size:14px;margin-bottom:10px">🏆 대회 성과</h3>
+            <h3 style="font-size:14px;margin-bottom:10px">대회 성과</h3>
             <div class="card-primary" style="padding:18px">
-              <p style="font-size:13px;color:var(--gray-600)">AI 챔피언십 시즌 1 · Track B</p>
-              <p style="font-size:26px;font-weight:800;color:var(--primary);margin-top:4px">17팀 중 3등 수상</p>
-              <p style="font-size:12px;color:var(--gray-500);margin-top:6px">1차 심사 TOP 10 진출 → 최종 3등</p>
+              <p style="font-size:13px;color:var(--gray-600)">AI 챔피언십 시즌 1 · Track A+B</p>
+              <p style="font-size:26px;font-weight:800;color:var(--primary);margin-top:4px">34팀 중 1등 수상</p>
+              <p style="font-size:12px;color:var(--gray-500);margin-top:6px">1차 심사 Track A+B 통합 1등</p>
             </div>
           </div>
           <div>
-            <h3 style="font-size:14px;margin-bottom:10px">💬 내부 검증 (세일즈·운영 인터뷰)</h3>
+            <h3 style="font-size:14px;margin-bottom:10px">내부 검증 (세일즈·운영 인터뷰)</h3>
             <div class="flex flex-col gap-8">
               <div class="card" style="padding:10px 14px">
                 <p style="font-size:11px;color:var(--gray-500);font-style:italic">"광고주 미팅 전에 브리핑 화면을 보여주면 설득 근거가 생긴다"</p>
